@@ -1,0 +1,20 @@
+default: &default
+  adapter: postgresql
+  encoding: unicode
+  pool: 5
+  port: 5432
+
+local: &local
+  host: <%= ENV['BOOKS_GEM_DB_HOST'] %>
+  username: <%= ENV['BOOKS_GEM_DB_USER'] %>
+  password: <%= ENV['BOOKS_GEM_DB_PASSWORD'] %>
+
+development:
+  <<: *default
+  <<: *local
+  database: <%= ENV['BOOKS_GEM_DB_DEVELOPMENT'] %>
+
+test:
+  <<: *default
+  <<: *local
+  database: <%= ENV['BOOKS_GEM_DB_TEST'] %>
