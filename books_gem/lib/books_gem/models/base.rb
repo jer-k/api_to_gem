@@ -1,4 +1,5 @@
 require 'active_record'
+require 'books_gem/db/books_gem_db'
 
 module BooksGem
   class Base < ::ActiveRecord::Base
