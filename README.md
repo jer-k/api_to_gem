@@ -1,6 +1,11 @@
 # Connecting to an external database through a Gem
 To test out this project follow these steps:
 
+I'm using Postgres so you'll need to create a user to own the databases
+```bash
+psql postgres --command="create role books_user with superuser login password 'books'"
+```
+
 First clone the project and setup the `books_api` project
 ```ruby
 $ git clone https://github.com/jer-k/api_to_gem.git
