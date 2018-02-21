@@ -1,4 +1,6 @@
 # Connecting to an external database through a Gem
+[Blog Post](https://jer-k.github.io/connect-to-database-through-gem/) about this repo.
+
 To test out this project follow these steps:
 
 I'm using Postgres so you'll need to create a user to own the databases
